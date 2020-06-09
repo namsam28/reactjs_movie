@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
-}
+html,body {margin:0;padding:0;}
+html {font-family:Malgungothic, "맑은고딕", sans-serif;font-size:16px;font-weight:400;letter-spacing:0;line-height:1;color:#000;word-break:keep-all;word-wrap:break-word;color:#222;}
+h1,h2,h3,h4,h5,h6 {margin:0;font-weight:400;}
+ul, ol {list-style:none;margin:0;padding:0;}
+fieldset {margin:0;padding:0;border:none;}
+textarea {resize:none;outline:none;padding:7px 20px;line-height:20px;color:#242424;font-family:'samyang',Malgungothic, "맑은고딕", sans-serif;font-size:14px;border:1px solid #ccc;box-sizing:border-box;}
+button {font-family:Malgungothic, "맑은고딕", sans-serif;cursor:pointer;padding:0;border:none;outline:none;}
+a {text-decoration:none;color:#242424;}
+p {margin:0;}
+em {font-style:normal;font-weight:400;letter-spacing:0;}
+strong {font-weight:400;}
+table {table-layout:fixed;width:100%;border-collapse:collapse;border-spacing:0;}
+th {padding:0;}
+td {padding:0;}
+input {padding:0;box-sizing:border-box;}
+input:focus {outline:none;}
+dl, dd {margin:0;}
+figure {margin:0;}
+img {vertical-align:top;}
+hr {display:none;}
+address {font-style:normal;}
+tt, code, kbd, samp, pre {font-family:Malgungothic, "맑은고딕", sans-serif;}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+body {font-size:16px;line-height:1.5;background-color:#303030;}
+.container {padding:40px;}
+.movies {display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;}
+.movies .movie {width:48%;margin-top:20px;background:#fff;padding:10px 15px 30px;box-sizing:border-box;transition:box-shadow 0.6s;}
+.movies .movie:hover {box-shadow:0px 0px 6px rgba(255,255,255,0.4),-0px -0px 6px rgba(255,255,255,0.4);}
+.movies .movie:nth-child(1),
+.movies .movie:nth-child(2) {margin-top:0;}
+.movies .movie > img {display:block;margin:0 auto;}
+.movies .movie .movie__data {margin-top:20px;}
+.movies .movie .movie__data .movie__title {font-size:18px;font-weight:600;}
+.movies .movie .movie__data .movie__year {position:relative;font-size:12px;text-align:right;color:#999}
+.movies .movie .movie__data .movie__year:before {content:'year. ';}
+.movies .movie .movie__data .movie__summary {margin-top:12px;color:#363636;}
+.movies .movie .movie__data .movie__genres {margin-top:12px;font-size:12px;}
+.movies .movie .movie__data .movie__genres li {display:inline-block;vertical-align:top;margin-right:10px;color:#aaa;}
+.movies .movie .movie__data .movie__genres li:last-child {margin-right:0;}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
